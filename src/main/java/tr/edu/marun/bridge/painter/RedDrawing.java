@@ -8,22 +8,22 @@ package tr.edu.marun.bridge.painter;
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JComponent;
-import tr.edu.marun.bridge.model.Oval;
-import tr.edu.marun.bridge.model.Rectangle;
+import tr.edu.marun.bridge.model.OvalModel;
+import tr.edu.marun.bridge.model.RectangleModel;
 
 /**
  *
  * @author bamasyali
  */
-public class BluePainter implements Painter {
+public class RedDrawing implements Drawing {
 
     @Override
-    public JComponent paintOval(final Oval oval) {
+    public JComponent drawOval(final OvalModel oval) {
         JComponent component = new JComponent() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.setColor(Color.blue);
+                g.setColor(Color.red);
                 g.fillOval(oval.getX(), oval.getY(), oval.getR(), oval.getR());
 
             }
@@ -32,12 +32,12 @@ public class BluePainter implements Painter {
     }
 
     @Override
-    public JComponent paintRectangle(final Rectangle rectangle) {
+    public JComponent drawRectangle(final RectangleModel rectangle) {
         JComponent component = new JComponent() {
             @Override
             protected void paintComponent(Graphics g) {
                 super.paintComponent(g);
-                g.setColor(Color.blue);
+                g.setColor(Color.red);
                 g.fillRect(rectangle.getX1(), rectangle.getY1(), Math.abs(rectangle.getX1() - rectangle.getX1()), rectangle.getY1() - rectangle.getY2());
             }
         };

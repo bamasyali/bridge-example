@@ -9,11 +9,11 @@ package tr.edu.marun.bridge.model;
  *
  * @author bamasyali
  */
-public class Rectangle implements Shape {
+public class RectangleModel implements Model {
 
     private final Integer x1, y1, x2, y2;
 
-    public Rectangle(Integer x1, Integer y1, Integer x2, Integer y2) {
+    public RectangleModel(Integer x1, Integer y1, Integer x2, Integer y2) {
         this.x1 = x1;
         this.y1 = y1;
         this.x2 = x2;
@@ -35,7 +35,5 @@ public class Rectangle implements Shape {
     public Integer getY2() {
         return y2;
     }
-    
-    
 
 }

@@ -6,17 +6,17 @@
 package tr.edu.marun.bridge.painter;
 
 import javax.swing.JComponent;
-import tr.edu.marun.bridge.model.Oval;
-import tr.edu.marun.bridge.model.Rectangle;
+import tr.edu.marun.bridge.model.OvalModel;
+import tr.edu.marun.bridge.model.RectangleModel;
 
 /**
  *
  * @author bamasyali
  */
-public interface Painter {
+public interface Drawing {
 
-    JComponent paintOval(Oval oval);
+    JComponent drawOval(OvalModel oval);
 
-    JComponent paintRectangle(Rectangle rectangle);
+    JComponent drawRectangle(RectangleModel rectangle);
 
 }

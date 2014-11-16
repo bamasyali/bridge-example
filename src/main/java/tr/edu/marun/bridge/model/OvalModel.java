@@ -9,11 +9,11 @@ package tr.edu.marun.bridge.model;
  *
  * @author bamasyali
  */
-public class Oval implements Shape {
+public class OvalModel implements Model {
 
     private final Integer x, y, r;
 
-    public Oval(Integer x, Integer y, Integer r) {
+    public OvalModel(Integer x, Integer y, Integer r) {
         this.x = x;
         this.y = y;
         this.r = r;

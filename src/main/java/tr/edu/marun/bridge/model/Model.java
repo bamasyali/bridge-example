@@ -9,6 +9,6 @@ package tr.edu.marun.bridge.model;
  *
  * @author bamasyali
  */
-public interface Shape {
-
+public interface Model {
+    
 }
